@@ -33,7 +33,7 @@ int main(int argc, char * argv[]) {
 	char * word = malloc(13);
 	if (ans == 'Y' || ans == 'y') {
 		printf("\tNew encoded value: ");
-		fgets(word, 12, stdin);
+		fgets(word, 13, stdin);
 		word[12] = 0;
 		encoded_data = word;
 	}
@@ -43,9 +43,10 @@ int main(int argc, char * argv[]) {
 	printf("\tDecoded data: \t%s\n", decoded_data);
 
 	// Free up allocated memory
-	free(original_data);
+	/*free(original_data);
 	free(encoded_data);
-	free(word);
+	free(decoded_data);
+	free(word);*/
 
 	return 0;
 }
