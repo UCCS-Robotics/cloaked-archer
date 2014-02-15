@@ -61,8 +61,7 @@ char * encode(char * _input) {
 			}
 			
 			// Skip the next set
-			z = y;
-			for (; y < z + (x + 1); y++);
+			y += (x + 1);
 		}
 		
 		// Stuff the parity bit
